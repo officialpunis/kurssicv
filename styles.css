@@ -1,0 +1,102 @@
+
+*, html{
+	padding: 0;
+	margin: 0;
+	background-color: black;
+	color: orange;
+}
+
+#VUmeter{
+	width: 300px;
+	height: 180px;
+	border: 4px double orange;
+	background-color: #555;
+	background-image: url(https://lh3.googleusercontent.com/proxy/HxyYhwaMgF_SG1eP38HxlWpGKrqGtv4f92H5tklFqKaNa8MVLQozfikHGs0YKRQfp1Dp2ivYxxX-qTnh5Gnln2n7Dp7AiqJr6C4qXLA);
+	background-position: 0px 0px;
+	background-size: 100%, 100%;
+	box-shadow: 0px 20px 80px #333 inset, 0px 0px 20px orange inset;
+	position: relative;
+	overflow: hidden;
+	filter: blur(0.5px);
+	
+}
+
+#needle{
+	position: absolute;
+	width: 3px;
+	height: 160px;
+	background-color: red;
+	left: 149px;
+	top: 40px;
+	transform-origin: center bottom;
+	animation-name: sounds;
+	//animation-duration: 1.5s;
+	animation-iteration-count: infinite;	
+}
+
+@keyframes sounds{
+	0%, 100%{
+		transform: rotate(-45deg);
+	}
+	15%{
+		transform: rotate(43deg);
+	}
+	30%{
+		transform: rotate(37deg);
+	}
+	40%{
+		transform: rotate(48deg);
+	}
+	
+	50%{
+		transform: rotate(23deg);
+		
+	}
+	72%{
+		transform: rotate(45deg);
+	}
+}
+
+
+h1{
+	font-family: impact;
+	font-size: 36px;
+	color: #000;
+	margin-bottom: 20px;
+	color: orange;
+}
+
+h2{
+	font-family: arial;
+	font-size: 24px;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	color: orange;
+}
+
+
+#content{
+	margin-left: 30px;
+	margin-top: 10px;
+	width: 50%;
+	margin: 10px auto;
+	outline: 1px solid #fff;
+	padding: 20px;
+	box-shadow: 0px 0px 10px #fff inset, 0px 0px 20px #fff;
+}
+
+ul{
+	
+}
+
+ul li{
+	list-style: decimal;
+	margin-left: 20px;
+}
+
+p{
+	width: 50%;
+	margin-left: 20px;
+	margin-top: 10px;	
+}
+
